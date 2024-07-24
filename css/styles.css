@@ -1,0 +1,344 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1c1c1c;
+    color: #e0e0e0;
+}
+
+/* HEADER */
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center; /* Center-align header content */
+}
+
+nav {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu li {
+    margin: 0 15px;
+}
+
+.nav-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-menu a:hover {
+    text-decoration: underline;
+}
+
+/* HERO SECTION */
+.hero {
+    background-color: #2e2e2e;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.hero-text {
+    max-width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.hero-text h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #f5f5f5;
+}
+
+.hero-text h4 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #bbbbbb;
+}
+
+.hero-text p {
+    font-size: 1.2em;
+    color: #cccccc;
+}
+
+.social-icons {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.social-icons li {
+    display: inline;
+}
+
+.social-icons a {
+    color: #ffffff;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #bbbbbb;
+}
+
+.hero-image {
+    text-align: center;
+}
+
+.hero-image img {
+    max-width: 200px;
+    height: auto;
+    border-radius: 50%;
+    border: 5px solid #f5f5f5; /* Optional: Add a border for better visibility */
+}
+
+/* ABOUT SECTION */
+.about {
+    background-color: #2e2e2e;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.title {
+    margin-bottom: 30px;
+}
+
+.title h1 {
+    font-size: 2.5em;
+    color: #f5f5f5;
+}
+
+.title p {
+    font-size: 1.2em;
+    color: #cccccc;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* ABOUT CONTENT */
+.about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.about-images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.about-image {
+    max-width: 150px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.about-text {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-text p {
+    color: #cccccc;
+    font-size: 1.1em;
+}
+
+.about-text button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #444444;
+    color: #f5f5f5;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.about-text button:hover {
+    background-color: #555555;
+}
+
+/* PORTFOLIO SECTION */
+.portfolio {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.portfolio-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.portfolio-item {
+    max-width: 300px;
+    background-color: #333;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+}
+
+.portfolio-item p {
+    padding: 10px;
+    color: #cccccc;
+}
+
+/* BLOG SECTION */
+.blog {
+    padding: 50px 20px;
+    background-color: #1c1c1c;
+}
+
+.blog .title {
+    text-align: center; /* Center-aligns the blog title section */
+    margin-bottom: 30px;
+}
+
+.blog .title h1 {
+    font-size: 2.5em; /* Adjust font size as needed */
+    color: #f5f5f5;
+    margin: 0; /* Remove margin for better centering */
+}
+
+.blog .title p {
+    font-size: 1.2em; /* Adjust font size as needed */
+    color: #cccccc;
+    margin: 0; /* Remove default margin */
+}
+
+.blog-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.blog-post {
+    background-color: #333;
+    border-radius: 10px;
+    overflow: hidden;
+    max-width: 280px; /* Adjust width as needed */
+    width: 100%; /* Ensures that it fits within the container */
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+.blog-post:hover {
+    transform: scale(1.05); /* Slightly zoom in on hover */
+}
+
+.blog-post img {
+    width: 100%;
+    height: 160px; /* Fixed height for uniformity */
+    object-fit: cover; /* Ensures images cover the area */
+}
+
+.blog-post h2 {
+    font-size: 1.25em; /* Slightly smaller font size */
+    color: #f5f5f5;
+    margin: 10px;
+}
+
+.blog-post p {
+    font-size: 0.9em; /* Slightly smaller font size */
+    color: #cccccc;
+    margin: 0 10px 10px;
+}
+
+.blog-post a {
+    display: block;
+    margin: 10px;
+    padding: 10px;
+    background-color: #444;
+    color: #f5f5f5;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 0.9em; /* Slightly smaller font size */
+}
+
+.blog-post a:hover {
+    background-color: #555;
+}
+
+/* GALLERY SECTION */
+.gallery {
+    padding: 50px 20px;
+    background-color: #1c1c1c;
+}
+
+.gallery .title {
+    text-align: center; /* Center-align the title */
+    margin-bottom: 30px; /* Space below the title */
+}
+
+.gallery .title h1 {
+    font-size: 2.5em; /* Adjust size as needed */
+    color: #f5f5f5;
+    margin: 0; /* Remove default margin */
+}
+
+.gallery .title p {
+    font-size: 1.2em; /* Adjust size as needed */
+    color: #cccccc;
+    margin: 0; /* Remove default margin */
+    text-align: center; /* Center-align the description */
+}
+
+.gallery-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.gallery-item {
+    max-width: 300px; /* Adjust width as needed */
+    background-color: #333;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.gallery-item img,
+.gallery-item video {
+    width: 100%;
+    height: auto;
+}
+
+.gallery-item video {
+    display: block;
+    border-radius: 10px;
+}
